@@ -12,11 +12,11 @@ function Login() {
     const history = useHistory();
 
     const onSubmit = data => {
-        let userSignedUp = JSON.parse(sessionStorage.getItem('alblecareAuth'));
+        let userSignedUp = JSON.parse(localStorage.getItem('alblecareAuth'));
         if(userSignedUp){
             if(userSignedUp.email === data.email && userSignedUp.password  === data.password){
-                history.push('/dashboard')
                 sessionStorage.setItem('isAuth', true)
+                history.push('/dashboard')
             }else{
                 Alert.error('Wrong Email or password', 4000)
             }
