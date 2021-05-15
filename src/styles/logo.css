@@ -1,0 +1,9 @@
+.logo-div{
+    height: 5rem;
+    width: 8rem;
+}
+
+.logo-div img{
+    max-height: 100%;
+    max-width: 100%;
+}
