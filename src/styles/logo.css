@@ -1,4 +1,5 @@
 .logo-div{
+    text-align: center;
     height: 5rem;
     width: 8rem;
 }
@@ -6,4 +7,19 @@
 .logo-div img{
     max-height: 100%;
     max-width: 100%;
+}
+
+/* custombutton */
+
+.btn-container button{
+    background-color: #FA824C;
+    color: white;
+    border-radius: 10px 0px 10px 0;
+    padding: 0.7rem 2rem;
+}
+
+.btn-container button:hover{
+    background-color: #f1a17c;
+    color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }

@@ -1,0 +1,69 @@
+.signup-section{
+    padding: 2rem;
+    /* width: 50%;
+    margin: auto; */
+    display: flex;
+}
+
+.input-form{
+    width: 50%;
+    align-self: center;
+}
+
+.signup-text{
+    width: 50%;
+    text-align: center;
+    /* margin: 3em 0 0 1em; */
+}
+
+.signup-text img{
+    max-width: 100%;
+}
+
+.form-field{
+    margin: 1rem 0;
+}
+
+.form-field input, .form-field select{
+    padding: 0.5em;
+    width: 100%;
+}
+
+.form-field span{
+    font-style: italic;
+    color: red;
+    font-size: 0.8em;
+}
+
+
+
+.signup-text h5, .signup-text h6{
+    line-height: 2rem;
+}
+
+.auth-btn{
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .signup-section{
+       flex-direction: column;
+    }
+    .signup-section{
+        width: 100%;
+        margin: auto;
+    }
+
+    .input-form{
+        width: 100%;
+    }
+    
+    .signup-text{
+        width: 100%;
+        text-align: center;
+        /* margin: 3em 0 0 1em; */
+    }
+    .signup-text img{
+        width: 15rem;
+    }
+}
