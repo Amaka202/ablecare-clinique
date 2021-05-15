@@ -1,3 +1,9 @@
+A hospital Dashboard with login and sign up functionalities.
+Built with React.
+
+A take home assignment for a tech job.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
