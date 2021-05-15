@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useForm } from "react-hook-form";
 import CustomButton from './CustomButton';
 import {Link, useHistory} from 'react-router-dom';
@@ -12,7 +12,17 @@ function Login() {
     const history = useHistory();
 
     const onSubmit = data => {
-        console.log(data);
+        let userSignedUp = JSON.parse(sessionStorage.getItem('alblecareAuth'));
+        if(userSignedUp){
+            if(userSignedUp.email === data.email && userSignedUp.password  === data.password){
+                history.push('/dashboard')
+                sessionStorage.setItem('isAuth', true)
+            }else{
+                Alert.error('Wrong Email or password', 4000)
+            }
+        }else{
+            Alert.error('User does not exist', 4000)
+        }
     };
     
     const handleRedirectToSignUp = () => {
@@ -22,11 +32,11 @@ function Login() {
 
     return (
         <div>
-            <header className='header-container'>
-            <Link to='/' className='link-logo'>
+            <header className='auth-header-container'>
+            <Link to='/' className='auth-link-logo'>
                 <Logo />
             </Link>
-            <div className='home-btn-div'>
+            <div className='auth-btn-div'>
                 <CustomButton handleClick={handleRedirectToSignUp} text='SIGN UP' />
             </div>
             </header>

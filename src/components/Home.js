@@ -29,7 +29,7 @@ function Home() {
                 <p >DASHBOARD</p>
             </Link>
             <div className='home-btn-div'>
-                <CustomButton handleClick={handleRedirectToLogin} text='SIGN IN' />
+                <CustomButton handleClick={handleRedirectToLogin} text='LOGIN' />
             </div>
             </header>
             <main className='main-container'>

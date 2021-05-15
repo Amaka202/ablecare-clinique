@@ -12,22 +12,22 @@ function SIgnUp() {
     const history = useHistory();
 
     const onSubmit = data => {
+        sessionStorage.setItem('alblecareAuth', JSON.stringify(data))
+        history.push('/dashboard')
         console.log(data);
     };
     
     const handleRedirectToLogin = () => {
         history.push('/login')
-    
     }
 
     return (
         <div>
-            <header className='header-container'>
-            <Link to='/' className='link-logo'>
+            <header className='auth-header-container'>
+            <Link to='/' className='auth-link-logo'>
                 <Logo />
             </Link>
-
-            <div className='home-btn-div'>
+            <div className='auth-btn-div'>
                 <CustomButton handleClick={handleRedirectToLogin} text='LOGIN' />
             </div>
             </header>

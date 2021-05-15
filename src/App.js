@@ -9,6 +9,7 @@ import './App.css';
 import SIgnUp from "./components/SIgnUp";
 import Login from "./components/Login";
 import Home from "./components/Home";
+import Dashboard from './components/Dashboard';
 
 
 function App() {
@@ -17,9 +18,8 @@ function App() {
       <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/signup' exact component={SIgnUp} />
-
           <Route path='/login' exact component={Login} />
-          {/* <ProtectedRoutes path='/posts' exact component={Posts} /> */}
+          {/* <ProtectedRoutes path='/dashboard' exact component={Dashboard} /> */}
 
           
       </Switch> 

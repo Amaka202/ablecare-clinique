@@ -10,7 +10,7 @@ export const ProtectedRoutes = ({
     <Route
       {...rest}
       render={props => {
-        if (localStorage.getItem("teamyToken")) {
+        if (sessionStorage.getItem("isAuth")) {
           return <Component {...props} />;
         } else {
           return (
