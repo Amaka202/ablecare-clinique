@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/dash.css';
 import Chart from "react-apexcharts";
-import car from '../images/car.png'
+import mask from '../images/mask.png'
 import house from '../images/house.png'
 import patients from '../images/patients.png'
 import nurse from '../images/nurse.png'
@@ -71,7 +71,9 @@ function Dash() {
 
     return (
         <div className='dash-container'>
+            
             <main>
+
                 <section>
                     <h5 className='section-title'>DASHBOARD</h5>
                     <div className='top-stats-container'>
@@ -106,12 +108,12 @@ function Dash() {
                             </div>
                             <div className='top-stats'>
                                 <div className='top-stats-img-div'>
-                                <img src={car} alt='patient icon'/>
+                                <img src={mask} alt='patient icon'/>
 
                                 </div>
                                 <div>
-                                    <p>Total Cars</p>
-                                    <h5>400</h5>
+                                    <p>Call duties </p>
+                                    <h5>12000</h5>
                                 </div>
                             </div>
                     </div>
@@ -155,6 +157,51 @@ function Dash() {
                     </div>
                     <div className='report-time'>
                         <p>10 minuite ago</p>
+                        <div>
+                            <span>Details</span>
+                            <img src={arrow} alt='arrow right'/>
+                        </div>
+                    </div>
+                 </div>
+                 <div className='reports-container'>
+                    <div className='report-text'>
+                        <div className='report-text-img-div'>
+                            <img src={notice} alt='exclaimation'/>
+                        </div>
+                        <p>A staff invected with covid 19</p>
+                    </div>
+                    <div className='report-time'>
+                        <p>20 minuite ago</p>
+                        <div>
+                            <span>Details</span>
+                            <img src={arrow} alt='arrow right'/>
+                        </div>
+                    </div>
+                 </div>
+                 <div className='reports-container'>
+                    <div className='report-text'>
+                        <div className='report-text-img-div'>
+                            <img src={notice} alt='exclaimation'/>
+                        </div>
+                        <p>Patient safety and the quality and efficiency </p>
+                    </div>
+                    <div className='report-time'>
+                        <p>45 minuite ago</p>
+                        <div>
+                            <span>Details</span>
+                            <img src={arrow} alt='arrow right'/>
+                        </div>
+                    </div>
+                 </div>
+                 <div className='reports-container'>
+                    <div className='report-text'>
+                        <div className='report-text-img-div'>
+                            <img src={notice} alt='exclaimation'/>
+                        </div>
+                        <p>Special challenges of emergency care.</p>
+                    </div>
+                    <div className='report-time'>
+                        <p>50 minuite ago</p>
                         <div>
                             <span>Details</span>
                             <img src={arrow} alt='arrow right'/>

@@ -1,8 +1,9 @@
 .dash-container{
-    padding: 0 2rem;
+    padding: 1rem 2rem 0 2rem;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
+    background-color: #F2F7FF;
 }
 
 .dash-container main{
@@ -20,7 +21,7 @@
 .top-stats-container{
     display: flex;
     padding: 1rem;  
-    background-color: #E9F1F7;
+    background-color: #fff;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
@@ -58,11 +59,11 @@
 }
 
 .chart-div{
-    background-color: #E9F1F7;
+    background-color: #fff;
 }
 
 .reports-container{
-    background-color: #E9F1F7;
+    background-color: #fff;
     padding: 1rem;
     cursor: pointer;
     margin-bottom: 1rem;
