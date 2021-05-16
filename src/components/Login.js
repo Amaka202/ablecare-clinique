@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { useForm } from "react-hook-form";
 import CustomButton from './CustomButton';
 import {Link, useHistory} from 'react-router-dom';
-import { Button, Loader, Alert } from 'rsuite';
+import { Alert } from 'rsuite';
 import Logo from './Logo';
 import '../styles/auth.css';
 import doctor from '../images/undraw_doctor_kw5l.png'
@@ -33,7 +33,7 @@ function Login() {
     return (
         <div>
             <header className='auth-header-container'>
-            <Link to='/' className='auth-link-logo'>
+            <Link to='/' className='auth-link-logo' style={{color: '#2D3047', textDecoration: 'none', marginLeft: '0.5rem'}}>
                 <Logo />
             </Link>
             <div className='auth-btn-div'>
@@ -80,7 +80,7 @@ function Login() {
                     {errors.password && <span>{errors.password.message}</span>}
                 </div>
                 
-                <div className="">
+                <div className="auth-btn">
 
                 <CustomButton className="primary-btn" type="submit" handleClick={handleSubmit(onSubmit)} text='LOGIN' />
                 {/* {loading && <Loader speed="fast" center backdrop content=""  />} */}

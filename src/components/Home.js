@@ -22,14 +22,16 @@ function Home() {
     return (
         <div>
             <header className='header-container'>
-            <Link to='/' className='link-logo'>
+            <Link to='/' className='link-logo' style={{color: '#2D3047', textDecoration: 'none', marginLeft: '0.5rem'}}>
                 <Logo />
             </Link>
-            <Link to='/dashboard' className='nav-text' style={{color: '#2D3047', textDecoration: '', marginLeft: '0.5rem'}}>
-                <p >DASHBOARD</p>
-            </Link>
             <div className='home-btn-div'>
-                <CustomButton handleClick={handleRedirectToLogin} text='LOGIN' />
+                <Link to='/dashboard' className='nav-text' style={{color: '#2D3047', textDecoration: '', marginLeft: '0.5rem'}}>
+                    <p >DASHBOARD</p>
+                </Link>
+                <div>
+                    <CustomButton handleClick={handleRedirectToLogin} text='LOGIN' />
+                </div>
             </div>
             </header>
             <main className='main-container'>

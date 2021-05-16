@@ -2,7 +2,6 @@ import React from 'react'
 import { useForm } from "react-hook-form";
 import CustomButton from './CustomButton';
 import {Link, useHistory} from 'react-router-dom';
-import { Button, Loader, Alert } from 'rsuite';
 import Logo from './Logo';
 import '../styles/auth.css';
 import nurse from '../images/undraw_medical_care_movn.png'
@@ -24,7 +23,7 @@ function SIgnUp() {
     return (
         <div>
             <header className='auth-header-container'>
-            <Link to='/' className='auth-link-logo'>
+            <Link to='/' className='auth-link-logo' style={{color: '#2D3047', textDecoration: 'none', marginLeft: '0.5rem'}}>
                 <Logo />
             </Link>
             <div className='auth-btn-div'>
@@ -136,7 +135,6 @@ function SIgnUp() {
                 <div className="auth-btn">
 
                 <CustomButton  type="submit" handleClick={handleSubmit(onSubmit)} text='SIGN UP' >SIGN UP</CustomButton> 
-                {/* {loading && <Loader speed="fast" center backdrop content=""  />} */}
                     <p style={{fontSize: '0.8em', color: '#4C506D', marginTop: '1rem'}}>
                         Already have an account? 
                         <Link to="/login" style={{color: '#4C506D', textDecoration: 'underline', marginLeft: '0.5rem', fontSize: '0.8em'}}>LOGIN</Link>

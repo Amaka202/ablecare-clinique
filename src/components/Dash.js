@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/dash.css';
-import { FlexboxGrid, Col } from 'rsuite';
+import Chart from "react-apexcharts";
 import car from '../images/car.png'
 import house from '../images/house.png'
 import patients from '../images/patients.png'
@@ -9,14 +9,72 @@ import notice from '../images/notice.png'
 import arrow from '../images/Vector.png'
 
 function Dash() {
+    const config = {
+        series: [{
+          name: "Male",
+          data: [20, 34, 81, 97, 200, 93, 20, 84, 98]
+        },
+        {
+            name: "Female",
+            data: [100, 21, 35, 41, 59, 62, 79, 81, 98]
+        }
+        ],
+        options: {
+          chart: {
+            stacked: true,
+            toolbar: {
+              show: false
+            },
+            animations: {
+                enabled: true,
+                easing: "linear",
+                dynamicAnimation: {
+                  enabled: true,
+                  speed: 300
+                }
+              },
+          },
+      
+          dataLabels: {
+            enabled: true
+          },   
+        
+          stroke: {
+            curve: "smooth"
+          },
+         
+          title: {
+            text: 'Patients Statistics',
+            align: 'left'
+          },
+          
+          colors:['#FA824C', '#9FD356'],
+          
+          fill: {
+            colors: [ '#FA824C', '#9FD356' ]
+          },
+        
+          xaxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+            title: {
+              text: 'Month'
+            }
+          },
+      
+          yaxis: {
+            title: {
+              text: 'Patients Performance'
+            }
+          }
+        }
+      }
+
     return (
         <div className='dash-container'>
             <main>
                 <section>
                     <p className='section-title'>DASHBOARD</p>
                     <div className='top-stats-container'>
-                    <FlexboxGrid>
-                        <FlexboxGrid.Item componentClass={Col} colspan={24} md={6}>
                             <div className='top-stats'>
                                 <div className='top-stats-img-div'>
                                     <img src={patients} alt='patient icon'/>
@@ -26,8 +84,6 @@ function Dash() {
                                     <h5>20000</h5>
                                 </div>
                             </div>
-                        </FlexboxGrid.Item>
-                        <FlexboxGrid.Item componentClass={Col} colspan={24} md={6}>
                             <div className='top-stats'>
                                 <div className='top-stats-img-div'>
                                 <img src={nurse} alt='patient icon'/>
@@ -35,11 +91,9 @@ function Dash() {
                                 </div>
                                 <div>
                                     <p>Total Staff</p>
-                                    <h5>20000</h5>
+                                    <h5>1500</h5>
                                 </div>
                             </div>
-                        </FlexboxGrid.Item>
-                        <FlexboxGrid.Item componentClass={Col} colspan={24} md={6}>
                             <div className='top-stats'>
                                 <div className='top-stats-img-div'>
                                 <img src={house} alt='patient icon'/>
@@ -47,11 +101,9 @@ function Dash() {
                                 </div>
                                 <div>
                                     <p>Total Rooms</p>
-                                    <h5>20000</h5>
+                                    <h5>200</h5>
                                 </div>
                             </div>
-                        </FlexboxGrid.Item>
-                        <FlexboxGrid.Item componentClass={Col} colspan={24} md={6}>
                             <div className='top-stats'>
                                 <div className='top-stats-img-div'>
                                 <img src={car} alt='patient icon'/>
@@ -59,15 +111,22 @@ function Dash() {
                                 </div>
                                 <div>
                                     <p>Total Cars</p>
-                                    <h5>20000</h5>
+                                    <h5>400</h5>
                                 </div>
                             </div>
-                        </FlexboxGrid.Item>
-                    </FlexboxGrid>
                     </div>
                 </section>
-                <section>
+                <section className='chart-container'>
+                <p className='section-title'>PATIENTS STATISTICS</p>
 
+                    <div className='chart-div'>
+                    <Chart 
+                        options={config.options} 
+                        series={config.series} 
+                        type="area"
+                        height='500'
+                    />
+                    </div>
                 </section>
             </main>
             <aside>

@@ -66,6 +66,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .auth-header-container{
+        padding: 1rem;
+    }
     .signup-section{
        flex-direction: column;
     }

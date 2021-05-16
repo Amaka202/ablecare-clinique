@@ -2,25 +2,24 @@
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .link-logo{
-    text-align: center;
-    flex: 70%;
     align-self: center;
+}
+
+
+.home-btn-div{
+    display: flex;
+    align-self: center;
+
 }
 
 .nav-text{
     align-self: center;
-    flex: 15%;
-
-}
-.home-btn-div{
-    flex: 15%;
-    align-self: center;
-
+    margin-right: 2rem;
 }
 
 .main-container{
@@ -87,5 +86,20 @@
     
     .hero-image img{
         max-width: 100%;
+    }
+
+    .header-container{
+        padding: 1rem;
+
+    }
+
+    .nav-text{
+        align-self: center;
+        margin-right: 1rem;
+    }
+    
+    .nav-text p{
+        font-size: 0.8em;
+
     }
 }

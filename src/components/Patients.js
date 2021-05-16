@@ -2,11 +2,102 @@ import React from 'react'
 import arrowup from '../images/arrow-up.png'
 import arrowdown from '../images/arrow-down.png'
 import '../styles/patients.css';
-import { Table } from 'rsuite';
+import Chart from "react-apexcharts";
 
-const { Column, HeaderCell, Cell, Pagination } = Table;
 
 function Patients() {
+
+    const incomeData = {
+        series: [{
+            name: "",
+            data: [250, 134, 81, 200]
+          }
+          ],
+          options: {
+            chart: {
+              stacked: true,
+              toolbar: {
+                show: false
+              },
+            },
+        
+            dataLabels: {
+              enabled: false
+            },   
+          
+            stroke: {
+              curve: "smooth"
+            },
+            
+            colors:['#9FD356'],
+            
+            fill: {
+              colors: [ '#9FD356']
+            },
+          
+            xaxis: {
+              categories: ['Jan', 'Feb', 'Mar', 'Apr'],
+              label: {
+                  show: false,
+              },
+              title: {
+                text: ''
+              }
+            },
+        
+            yaxis: {
+                show: false,
+              title: {
+                text: ''
+              }
+            }
+          }
+      }
+
+      const expenseData = {
+        series: [{
+          name: "",
+          data: [200, 81, 120, 197]
+        }
+        ],
+        options: {
+          chart: {
+            stacked: true,
+            toolbar: {
+              show: false
+            },
+          },
+      
+          dataLabels: {
+            enabled: false
+          },   
+        
+          stroke: {
+            curve: "smooth"
+          },
+          
+          colors:['#FA824C'],
+          
+          fill: {
+            colors: [ '#FA824C']
+          },
+        
+          xaxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr'],
+            show: false,
+            title: {
+              text: ''
+            }
+          },
+      
+          yaxis: {
+            show: false,
+            title: {
+              text: ''
+            }
+          }
+        }
+      }
     return (
         <div className='patients-container'>
             <section>
@@ -59,7 +150,15 @@ function Patients() {
                             <h6>$200,000</h6>
                         </div>
                     </div>
-                    <div>GRAPH</div>
+                    <div>
+                    <Chart 
+                        options={incomeData.options} 
+                        series={incomeData.series} 
+                        type="area"
+                        height="200"
+
+                    />
+                    </div>
                 </div>
                 <div className='red-sec'>
                     <div className='inner-flex'>
@@ -71,7 +170,15 @@ function Patients() {
                             <h6>$100,000</h6>
                         </div>
                     </div>
-                    <div>GRAPH</div>
+                    <div>
+                    <Chart 
+                        options={expenseData.options} 
+                        series={expenseData.series} 
+                        type="area"
+                        height="200"
+
+                    />
+                    </div>
                 </div>
                 </div>
             </section>
