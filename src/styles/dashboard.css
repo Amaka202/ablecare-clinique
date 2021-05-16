@@ -47,6 +47,10 @@
     .dashboard-header{
         padding: 1.5rem 1rem;
     }
+
+    .dashboard-main{
+        padding: 1rem;
+    }
     .dashboard-flex{
         flex-direction: column;
     }
