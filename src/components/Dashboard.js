@@ -29,7 +29,6 @@ function Dashboard() {
                 </div>
             </header>
             <main>
-                <h4>HOSPITAL DASHBOARD</h4>
                 <Dash />
                 <Patients />
             </main>

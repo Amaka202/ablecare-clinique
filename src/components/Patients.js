@@ -134,6 +134,41 @@ function Patients() {
                         <td>USA</td>
                         <td>Female</td>
                     </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Nene Leakes</td>
+                        <td>30</td>
+                        <td>USA</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>Flowa Shaw</td>
+                        <td>78</td>
+                        <td>Germany</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <td>Khloe Kardashian</td>
+                        <td>38</td>
+                        <td>USA</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td>Kelechi Ihenanacho</td>
+                        <td>27</td>
+                        <td>London</td>
+                        <td>Male</td>
+                    </tr>
+                    {/* <tr>
+                        <td>008</td>
+                        <td>Drake Aubrey</td>
+                        <td>35</td>
+                        <td>Canada</td>
+                        <td>Male</td>
+                    </tr> */}
                 </table>
                 </div>
             </section>

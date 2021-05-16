@@ -1,8 +1,11 @@
 .dash-container{
-    padding: 0 2rem;
+    padding: 1rem 2rem 0 2rem;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
+    background-color: #F2F7FF;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .dash-container main{
@@ -20,7 +23,7 @@
 .top-stats-container{
     display: flex;
     padding: 1rem;  
-    background-color: #E9F1F7;
+    background-color: #fff;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
@@ -58,16 +61,15 @@
 }
 
 .chart-div{
-    background-color: #E9F1F7;
+    background-color: #fff;
 }
 
 .reports-container{
-    background-color: #E9F1F7;
+    background-color: #fff;
     padding: 1rem;
     cursor: pointer;
     margin-bottom: 1rem;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;}
 
 .reports-container:hover{
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
