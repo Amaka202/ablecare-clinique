@@ -11,8 +11,9 @@ function SIgnUp() {
     const history = useHistory();
 
     const onSubmit = data => {
-        localStorage.setItem('alblecareAuth', JSON.stringify(data))
-        history.push('/login')
+        localStorage.setItem('alblecareAuth', JSON.stringify(data));
+        sessionStorage.setItem('isAuth', true);
+        history.push('/dashboard')
     };
     
     const handleRedirectToLogin = () => {

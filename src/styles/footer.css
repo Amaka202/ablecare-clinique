@@ -10,6 +10,10 @@
     background-color: white;
 }
 
+.my-footer p{
+    text-align: center;
+}
+
 .social-links{
     margin-bottom: 1rem;
 }
