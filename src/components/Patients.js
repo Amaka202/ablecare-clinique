@@ -101,7 +101,7 @@ function Patients() {
     return (
         <div className='patients-container'>
             <section>
-                <p className='section-title'>PATIENTS</p>
+                <h5 className='section-title'>PATIENTS</h5>
 
                 <div className='table-div'>
                 <table style={{width:'100%'}}>
@@ -138,7 +138,7 @@ function Patients() {
                 </div>
             </section>
             <section>
-                <p className='section-title'>BALANCE</p>
+                <h5 className='section-title'>BALANCE</h5>
                 <div className='balance-container'>
                 <div className='green-sec'>
                     <div className='inner-flex'>

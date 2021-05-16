@@ -1,6 +1,6 @@
 .patients-container{
     display: flex;
-    padding: 2rem;
+    padding: 1rem 2rem;
     justify-content: space-between;
     align-content: space-between;
 }
@@ -92,7 +92,6 @@
 @media only screen and (max-width: 800px) {
     .patients-container{
         flex-direction: column;
-        padding: 2rem;
         justify-content: center;
         align-content: center;
     }
@@ -103,6 +102,7 @@
     
     .patients-container section:nth-child(2){
         width: 100%;
+        margin-top: 2rem;
     }
     /* .patients-container th, .patients-container td{
         padding: o.5rem;

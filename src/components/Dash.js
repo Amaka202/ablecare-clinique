@@ -73,7 +73,7 @@ function Dash() {
         <div className='dash-container'>
             <main>
                 <section>
-                    <p className='section-title'>DASHBOARD</p>
+                    <h5 className='section-title'>DASHBOARD</h5>
                     <div className='top-stats-container'>
                             <div className='top-stats'>
                                 <div className='top-stats-img-div'>
@@ -117,7 +117,7 @@ function Dash() {
                     </div>
                 </section>
                 <section className='chart-container'>
-                <p className='section-title'>PATIENTS STATISTICS</p>
+                <h5 className='section-title'>PATIENTS STATISTICS</h5>
 
                     <div className='chart-div'>
                     <Chart 
@@ -130,7 +130,7 @@ function Dash() {
                 </section>
             </main>
             <aside>
-                <p className='section-title'>REPORTS</p>
+                <h5 className='section-title'>REPORTS</h5>
                  <div className='reports-container'>
                     <div className='report-text'>
                         <div className='report-text-img-div'>

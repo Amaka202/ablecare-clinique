@@ -9,14 +9,17 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-
+.dashboard-container main h4{
+    text-align: center;
+    margin: 1rem;
+}
 .dashboard-header div, .dashboard-header .dash-logo{
     align-self: center;
 }
 
 @media only screen and (max-width: 800px) {
     .dashboard-header{
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
 }
 
