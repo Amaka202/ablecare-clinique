@@ -26,21 +26,21 @@
 .table-div{
     overflow-x:auto;
 }
-.patients-container tr{
+.table-div tr{
     background-color: #fff;
 
 }
-.patients-container tr:hover{
+.table-div tr:hover{
     background-color: #dee2e6;
     cursor: pointer;
 }
 
-.patients-container th, .patients-container td{
+.table-div th, .table-div td{
     padding: 1rem;
     text-align: left;
 }
 
-.patients-container th{
+.table-div th{
     border-bottom: 0.5em solid #F2F7FF;
     margin-bottom: 1rem;
 }
@@ -49,7 +49,6 @@
 .balance-container{
     background-color: #fff;
     padding: 1rem;
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 .balance-container p{

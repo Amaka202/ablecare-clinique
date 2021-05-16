@@ -10,7 +10,6 @@
 
 .dash-container main{
     width: 67%;
-    margin-bottom: 1rem;
 }
 .dash-container aside{
     width: 28%;
@@ -22,7 +21,6 @@
 
 .top-stats-container{
     display: flex;
-    padding: 1rem;  
     background-color: #fff;
     justify-content: space-between;
     align-content: space-between;
@@ -56,23 +54,18 @@
     width: 60%;
 }
 
-.chart-container{
-    margin-top: 3rem;
-}
 
-.chart-div{
+.summary-section, .chart-container, .table-section, .report-section, .balance-section{
     background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .reports-container{
     background-color: #fff;
-    padding: 1rem;
     cursor: pointer;
-    margin-bottom: 1rem;
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;}
 
-.reports-container:hover{
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .report-text{

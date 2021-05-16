@@ -17,9 +17,45 @@
     align-self: center;
 }
 
+.dashboard-flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.dashboard-main{
+    background-color: #F2F7FF;
+    padding: 2rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.report-section, .balance-section{
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.left-flex{
+    width: 68%;
+}
+.right-flex{
+    width: 30%;
+}
+
 @media only screen and (max-width: 800px) {
     .dashboard-header{
         padding: 1.5rem 1rem;
+    }
+    .dashboard-flex{
+        flex-direction: column;
+    }
+
+    .left-flex{
+        width: 100%;
+    }
+    .right-flex{
+        width: 100%;
     }
 }
 
