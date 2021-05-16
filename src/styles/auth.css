@@ -67,9 +67,13 @@
     margin-top: 2rem;
 }
 
+.auth-btn button{
+    width: 10rem;
+}
+
 @media only screen and (max-width: 800px) {
     .auth-header-container{
-        padding: 1rem;
+        padding: 1.5rem 1rem;
     }
     .signup-section{
        flex-direction: column;
@@ -90,5 +94,8 @@
     }
     .signup-text img{
         width: 15rem;
+    }
+    .auth-btn button{
+        width: 7rem;
     }
 }

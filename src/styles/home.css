@@ -39,10 +39,11 @@
 
 .hero-text h1{
     line-height: 5rem;
+    font-size: 2.7em;
 }
 .hero-text h3{
     line-height: 3rem;
-
+    font-size: 2em;
 }
 
 .hero-text span{
@@ -65,6 +66,10 @@
     margin: 2rem 0;
 }
 
+.hero-text-btn button{
+    width: 10rem;
+}
+
 @media only screen and (max-width: 800px) {
     .main-container{
         min-height: 70vh;
@@ -80,6 +85,16 @@
         align-self: center;
     }
 
+
+    .hero-text h1{
+        line-height: 5rem;
+        font-size: 1.5em;
+    }
+    .hero-text h3{
+        line-height: 3rem;
+        font-size: 1.1em;
+    }
+
     .hero-image{
         width: 100%;
     }
@@ -89,7 +104,7 @@
     }
 
     .header-container{
-        padding: 1rem;
+        padding: 1.5rem 1rem;
 
     }
 
@@ -101,5 +116,9 @@
     .nav-text p{
         font-size: 0.8em;
 
+    }
+
+    .hero-text-btn button{
+        width: 7rem;
     }
 }
