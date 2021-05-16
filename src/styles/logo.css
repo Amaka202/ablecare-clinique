@@ -1,0 +1,68 @@
+/* .logo-div{
+    text-align: center;
+    height: 5rem;
+    width: 8rem;
+} */
+
+.logo-div{
+    display: flex;
+}
+
+.logo-div img{
+    width: 2rem;
+}
+
+.logo-div p{
+    line-height: 10px;
+    font-size: 1.7em;
+    font-family: 'Italianno', cursive;
+
+}
+
+.logo-div .ital-para{
+    font-family: 'Italianno', cursive;
+    font-size: 2em;
+    color: #9FD356;
+    font-weight: 700;
+}
+
+/* custombutton */
+
+.btn-container button{
+    background-color: #FA824C;
+    color: white;
+    border-radius: 10px 0px 10px 0;
+    padding: 0.7rem 0;
+    width: 8em;
+}
+
+.btn-container button:hover{
+    background-color: #f1a17c;
+    color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+@media only screen and (max-width: 800px) {
+    .btn-container button{
+        padding: 0.7rem 0;
+        font-size: 0.8em;
+    }
+
+    .logo-div p{
+        font-size: 1.3em;
+    
+    }
+    
+    .logo-div .ital-para{
+        font-size: 1.7em;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-container button{
+        padding: 0.5rem 0;
+        font-size: 0.7em;
+    }
+}

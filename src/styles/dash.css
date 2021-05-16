@@ -1,0 +1,125 @@
+.dash-container{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.dash-container main{
+    width: 67%;
+    margin-bottom: 1rem;
+}
+.dash-container aside{
+    width: 28%;
+}
+
+.section-title{
+    margin-bottom: 1rem;
+}
+
+.top-stats-container{
+    display: flex;
+    padding: 1rem;  
+    background-color: #E9F1F7;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-stats{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* margin-bottom: 1rem; */
+}
+
+.top-stats p:first-child{
+    font-size: 0.9em;
+}
+
+.top-stats-img-div{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid #990D35;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+
+}
+
+.top-stats-img-div img{
+    width: 60%;
+}
+
+.chart-container{
+    margin-top: 2rem;
+}
+
+.chart-div{
+    background-color: #E9F1F7;
+}
+
+.reports-container{
+    background-color: #E9F1F7;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.reports-container:hover{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.report-text{
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    margin-bottom: 1rem;
+}
+
+.report-text-img-div{
+    margin-right: 1rem;
+    width: 1rem;
+}
+
+.report-text-img-div img{
+    max-width: 100%;
+}
+
+.report-time{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.report-time p{
+    color: #AEA4BF;
+}
+
+.report-time img{
+    width: 1rem;
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .dash-container{
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .dash-container main{
+        width: 100%;
+    }
+    .dash-container aside{
+        width: 100%;
+    }
+
+    .top-stats{
+        margin-bottom: 1rem;
+    }
+}

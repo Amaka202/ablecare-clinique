@@ -1,0 +1,22 @@
+.dashboard-container{
+}
+
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 1rem 3rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+
+.dashboard-header div, .dashboard-header .dash-logo{
+    align-self: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .dashboard-header{
+        padding: 1rem;
+    }
+}
+
