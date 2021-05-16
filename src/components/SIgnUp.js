@@ -12,8 +12,7 @@ function SIgnUp() {
 
     const onSubmit = data => {
         localStorage.setItem('alblecareAuth', JSON.stringify(data))
-        sessionStorage.setItem('isAuth', true)
-        history.push('/dashboard')
+        history.push('/login')
     };
     
     const handleRedirectToLogin = () => {
@@ -123,7 +122,7 @@ function SIgnUp() {
                     {errors.jobrole && <span>{errors.jobrole.message}</span>}
                 </div>
                 <div className="form-field">
-                    <input name="department" placeholder="department" 
+                    <input name="department" placeholder="Department" 
                         ref={
                             register({
                               required: 'This field is required' // JS only: <p>error message</p> TS only support string

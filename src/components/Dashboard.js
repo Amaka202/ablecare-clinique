@@ -82,7 +82,7 @@ function Dashboard() {
 
                                 </div>
                                 <div>
-                                    <p>Total </p>
+                                    <p>Covid cases </p>
                                     <h5>12000</h5>
                                 </div>
                             </div>
